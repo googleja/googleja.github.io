@@ -22,7 +22,7 @@ python3 -m http.server 8000
 
 ## 内容说明
 
-- `assets/videos/vln-vla`：来自 `demo_unitree`
+- `assets/videos/vla-agent`：来自 `demo_unitree`
 - `assets/videos/simulation`：来自 `demo_ue_isaac`
 - `assets/videos/perception`：来自 `demo_ral_icra`
 - `assets/videos/control`：来自 `demo_control`
