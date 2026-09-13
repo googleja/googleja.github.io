@@ -239,6 +239,7 @@ footer {
 
 .demo-grid-feature {
   grid-template-columns: minmax(0, 800px);
+  justify-content: center;
 }
 
 .demo-card {
