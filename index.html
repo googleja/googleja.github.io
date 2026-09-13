@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="张泽宇的具身智能研究与工程作品集，涵盖 VLN/VLA、具身仿真、机器人感知与运动控制。"
+    />
+    <meta name="theme-color" content="#0d1917" />
+    <title>张泽宇 | Embodied AI Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">跳转到项目</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark">ZY</span>
+        <span>张泽宇</span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#vln-vla">VLN / VLA</a>
+        <a href="#simulation">仿真</a>
+        <a href="#perception">感知</a>
+        <a href="#control">运控</a>
+      </nav>
+      <a class="header-cta" href="assets/files/Zeyu_Zhang_Resume.pdf" target="_blank" rel="noreferrer">
+        查看简历
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Embodied AI · Research & Engineering</p>
+          <h1 id="hero-title">让机器人在开放环境中<br /><span>感知、推理与行动。</span></h1>
+          <p class="hero-intro">
+            聚焦视觉语言导航、VLA、开放世界感知与机器人运动控制，打通从仿真训练到实机部署的完整链路。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">浏览 Demo</a>
+            <a class="button button-secondary" href="mailto:zhang-zeyu@sjtu.edu.cn">联系我</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="个人信息">
+          <div class="profile-photo-wrap">
+            <img src="assets/images/profile.png" alt="张泽宇证件照" />
+          </div>
+          <div>
+            <p class="profile-name">张泽宇 <span>Zeyu Zhang</span></p>
+            <p class="profile-role">Embodied AI Researcher</p>
+          </div>
+          <dl class="stats">
+            <div><dt>4</dt><dd>研究方向</dd></div>
+            <div><dt>9</dt><dd>视频 Demo</dd></div>
+            <div><dt>Real + Sim</dt><dd>验证环境</dd></div>
+          </dl>
+          <a class="email-link" href="mailto:zhang-zeyu@sjtu.edu.cn">zhang-zeyu@sjtu.edu.cn</a>
+        </aside>
+      </section>
+
+      <section class="work-intro" id="work" aria-labelledby="work-title">
+        <p class="section-kicker">Selected Work</p>
+        <div>
+          <h2 id="work-title">研究与工程实践</h2>
+          <p>所有 Demo 默认静音、循环播放；滚动到可视区域时自动播放。</p>
+        </div>
+      </section>
+
+      <section class="project-section" id="vln-vla" aria-labelledby="vln-title">
+        <header class="section-heading">
+          <span>01</span>
+          <div>
+            <p class="section-kicker">Language to Action</p>
+            <h2 id="vln-title">VLN / VLA</h2>
+            <p>面向语言指令与目标驱动的实机导航，连接视觉理解、历史观测与机器人动作。</p>
+          </div>
+        </header>
+        <div class="demo-grid demo-grid-two">
+          <article class="demo-card">
+            <div class="video-frame">
+              <video autoplay muted loop playsinline preload="metadata" data-demo aria-label="指令导航 Demo">
+                <source src="assets/videos/vln-vla/instruction-navigation.mp4" type="video/mp4" />
+              </video>
+              <span class="mute-badge" aria-hidden="true">Muted</span>
+              <button class="play-toggle" type="button" aria-label="暂停视频">Pause</button>
+            </div>
+            <div class="demo-copy">
+              <div><span class="demo-index">01.1</span><h3>Instruction Navigation</h3></div>
+              <p>语言指令驱动的实机视觉导航。</p>
+            </div>
+          </article>
+          <article class="demo-card">
+            <div class="video-frame">
+              <video autoplay muted loop playsinline preload="metadata" data-demo aria-label="目标导航 Demo">
+                <source src="assets/videos/vln-vla/object-navigation.mp4" type="video/mp4" />
+              </video>
+              <span class="mute-badge" aria-hidden="true">Muted</span>
+              <button class="play-toggle" type="button" aria-label="暂停视频">Pause</button>
+            </div>
+            <div class="demo-copy">
+              <div><span class="demo-index">01.2</span><h3>Object Navigation</h3></div>
+              <p>目标搜索与趋近的 ObjectNav 实机演示。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section" id="simulation" aria-labelledby="simulation-title">
+        <header class="section-heading">
+          <span>02</span>
+          <div>
+            <p class="section-kicker">Simulation at Scale</p>
+            <h2 id="simulation-title">具身仿真平台</h2>
+            <p>融合 Unreal Engine 高保真资产与 Isaac 机器人仿真能力，覆盖人形与四足平台。</p>
+          </div>
+        </header>
+        <div class="demo-grid demo-grid-three">
+          <article class="demo-card">
+            <div class="video-frame">
+              <video autoplay muted loop playsinline preload="metadata" data-demo aria-label="G1 多实例仿真 Demo">
+                <source src="assets/videos/simulation/g1-multi.mp4" type="video/mp4" />
+              </video>
+              <span class="mute-badge" aria-hidden="true">Muted</span>
+              <button class="play-toggle" type="button" aria-label="暂停视频">Pause</button>
+            </div>
+            <div class="demo-copy compact">
+              <div><span class="demo-index">02.1</span><h3>G1 Multi-instance</h3></div>
+              <p>人形机器人多实例仿真展示。</p>
+            </div>
+          </article>
+          <article class="demo-card">
+            <div class="video-frame">
+              <video autoplay muted loop playsinline preload="metadata" data-demo aria-label="G1 仿真 Demo">
+                <source src="assets/videos/simulation/g1.mp4" type="video/mp4" />
+              </video>
+              <span class="mute-badge" aria-hidden="true">Muted</span>
+              <button class="play-toggle" type="button" aria-label="暂停视频">Pause</button>
+            </div>
+            <div class="demo-copy compact">
+              <div><span class="demo-index">02.2</span><h3>G1 Simulation</h3></div>
+              <p>高保真人形机器人场景仿真。</p>
+            </div>
+          </article>
+          <article class="demo-card">
+            <div class="video-frame">
+              <video autoplay muted loop playsinline preload="metadata" data-demo aria-label="Go2 仿真 Demo">
+                <source src="assets/videos/simulation/go2.mp4" type="video/mp4" />
+              </video>
+              <span class="mute-badge" aria-hidden="true">Muted</span>
+              <button class="play-toggle" type="button" aria-label="暂停视频">Pause</button>
+            </div>
+            <div class="demo-copy compact">
+              <div><span class="demo-index">02.3</span><h3>Go2 Simulation</h3></div>
+              <p>四足机器人感知与交互仿真。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section" id="perception" aria-labelledby="perception-title">
+        <header class="section-heading">
+          <span>03</span>
+          <div>
+            <p class="section-kicker">Open-world Perception</p>
+            <h2 id="perception-title">机器人感知</h2>
+            <p>面向开放世界地形认知与可通行性学习，在室内外多种环境中验证。</p>
+          </div>
+        </header>
+        <div class="demo-grid demo-grid-three">
+          <article class="demo-card">
+            <div class="video-frame">
+              <video autoplay muted loop playsinline preload="metadata" data-demo aria-label="街景地形感知 Demo">
+                <source src="assets/videos/perception/street.mp4" type="video/mp4" />
+              </video>
+              <span class="mute-badge" aria-hidden="true">Muted</span>
+              <button class="play-toggle" type="button" aria-label="暂停视频">Pause</button>
+            </div>
+            <div class="demo-copy compact">
+              <div><span class="demo-index">03.1</span><h3>Street</h3></div>
+              <p>街景环境中的开放世界地形感知。</p>
+            </div>
+          </article>
+          <article class="demo-card">
+            <div class="video-frame">
+              <video autoplay muted loop playsinline preload="metadata" data-demo aria-label="室内地形感知 Demo">
+                <source src="assets/videos/perception/indoor.mp4" type="video/mp4" />
+              </video>
+              <span class="mute-badge" aria-hidden="true">Muted</span>
+              <button class="play-toggle" type="button" aria-label="暂停视频">Pause</button>
+            </div>
+            <div class="demo-copy compact">
+              <div><span class="demo-index">03.2</span><h3>Indoor</h3></div>
+              <p>室内复杂地形的视觉—物理属性认知。</p>
+            </div>
+          </article>
+          <article class="demo-card">
+            <div class="video-frame">
+              <video autoplay muted loop playsinline preload="metadata" data-demo aria-label="室外地形感知 Demo">
+                <source src="assets/videos/perception/outdoor.mp4" type="video/mp4" />
+              </video>
+              <span class="mute-badge" aria-hidden="true">Muted</span>
+              <button class="play-toggle" type="button" aria-label="暂停视频">Pause</button>
+            </div>
+            <div class="demo-copy compact">
+              <div><span class="demo-index">03.3</span><h3>Outdoor</h3></div>
+              <p>自然室外环境中的地形识别与推断。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section" id="control" aria-labelledby="control-title">
+        <header class="section-heading">
+          <span>04</span>
+          <div>
+            <p class="section-kicker">Learning to Move</p>
+            <h2 id="control-title">运动控制</h2>
+            <p>基于强化学习与 Teacher–Student 蒸馏的四足机器人敏捷越野控制。</p>
+          </div>
+        </header>
+        <div class="demo-grid demo-grid-feature">
+          <article class="demo-card demo-card-feature">
+            <div class="video-frame">
+              <video autoplay muted loop playsinline preload="metadata" data-demo aria-label="四足机器人敏捷运动控制 Demo">
+                <source src="assets/videos/control/agile-control.mp4" type="video/mp4" />
+              </video>
+              <span class="mute-badge" aria-hidden="true">Muted</span>
+              <button class="play-toggle" type="button" aria-label="暂停视频">Pause</button>
+            </div>
+            <div class="demo-copy">
+              <div><span class="demo-index">04.1</span><h3>Agile Locomotion</h3></div>
+              <p>PPO、DAgger 与 Sim2Sim2Real 驱动的四足机器人敏捷运动。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-title">
+        <p class="section-kicker">Let’s Build</p>
+        <h2 id="contact-title">期待让具身智能真正走进物理世界。</h2>
+        <div class="contact-actions">
+          <a class="button button-light" href="mailto:zhang-zeyu@sjtu.edu.cn">发送邮件</a>
+          <a class="text-link" href="assets/files/Zeyu_Zhang_Resume.pdf" target="_blank" rel="noreferrer">下载 PDF 简历 →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Zeyu Zhang</p>
+      <p>Embodied AI · Shanghai</p>
+    </footer>
+  </body>
+</html>
