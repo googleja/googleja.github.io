@@ -74,8 +74,7 @@ a {
 }
 
 .brand,
-.site-header nav,
-.header-cta {
+.site-header nav {
   display: flex;
   align-items: center;
 }
@@ -118,16 +117,6 @@ a {
   color: var(--accent);
 }
 
-.header-cta {
-  min-height: 38px;
-  padding: 0 16px;
-  color: white;
-  background: var(--dark);
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
 main,
 footer {
   width: var(--page);
@@ -137,15 +126,13 @@ footer {
 .hero {
   min-height: 690px;
   padding: 108px 0 90px;
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(310px, 0.55fr);
-  gap: 80px;
+  display: flex;
   align-items: center;
 }
 
-.hero-copy,
-.profile-card {
+.hero-copy {
   min-width: 0;
+  max-width: 980px;
 }
 
 .eyebrow,
@@ -178,133 +165,6 @@ footer {
   line-height: 1.8;
 }
 
-.hero-actions,
-.contact-actions {
-  margin-top: 38px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.button {
-  min-height: 48px;
-  padding: 0 22px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 760;
-  transition: transform 180ms ease, background 180ms ease, color 180ms ease;
-}
-
-.button:hover {
-  transform: translateY(-2px);
-}
-
-.button-primary {
-  color: white;
-  background: var(--accent);
-}
-
-.button-secondary {
-  border-color: var(--line);
-  background: rgba(255, 255, 255, 0.45);
-}
-
-.profile-card {
-  position: relative;
-  overflow: hidden;
-  padding: 30px;
-  background: var(--dark);
-  color: white;
-  border-radius: 32px;
-  box-shadow: var(--shadow);
-}
-
-.profile-card::after {
-  content: "";
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  right: -70px;
-  bottom: -80px;
-  border: 1px solid rgba(168, 240, 209, 0.38);
-  border-radius: 50%;
-  box-shadow: 0 0 0 30px rgba(168, 240, 209, 0.04), 0 0 0 60px rgba(168, 240, 209, 0.035);
-}
-
-.profile-photo-wrap {
-  width: 112px;
-  height: 112px;
-  margin-bottom: 25px;
-  overflow: hidden;
-  background: white;
-  border: 3px solid rgba(255, 255, 255, 0.15);
-  border-radius: 50%;
-}
-
-.profile-photo-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.profile-name {
-  margin: 0;
-  font-size: 22px;
-  font-weight: 800;
-}
-
-.profile-name span {
-  margin-left: 7px;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.profile-role {
-  margin: 7px 0 0;
-  color: var(--mint);
-  font-size: 13px;
-}
-
-.stats {
-  margin: 28px 0;
-  padding: 23px 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.stats div + div {
-  padding-left: 15px;
-  border-left: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.stats dt {
-  color: white;
-  font-size: 19px;
-  font-weight: 800;
-}
-
-.stats dd {
-  margin: 6px 0 0;
-  color: rgba(255, 255, 255, 0.52);
-  font-size: 10px;
-}
-
-.email-link {
-  position: relative;
-  z-index: 1;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 12px;
-  overflow-wrap: anywhere;
-}
-
 .work-intro {
   padding: 60px 0 56px;
   display: grid;
@@ -313,8 +173,7 @@ footer {
 }
 
 .work-intro h2,
-.section-heading h2,
-.contact h2 {
+.section-heading h2 {
   margin: 0;
   letter-spacing: -0.04em;
 }
@@ -485,37 +344,8 @@ footer {
   aspect-ratio: 16 / 8.5;
 }
 
-.contact {
-  margin-top: 120px;
-  padding: clamp(50px, 8vw, 92px);
-  color: white;
-  background: var(--dark);
-  border-radius: 34px;
-}
-
-.contact .section-kicker {
-  color: var(--mint);
-}
-
-.contact h2 {
-  max-width: 840px;
-  margin-top: 18px;
-  font-size: clamp(34px, 5vw, 64px);
-  line-height: 1.16;
-}
-
-.button-light {
-  color: var(--dark);
-  background: var(--mint);
-}
-
-.contact .text-link {
-  margin-left: 10px;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 14px;
-}
-
 footer {
+  margin-top: 110px;
   padding: 35px 0 45px;
   display: flex;
   justify-content: space-between;
@@ -525,15 +355,6 @@ footer {
 }
 
 @media (max-width: 960px) {
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .profile-card {
-    max-width: 560px;
-  }
-
   .demo-grid-three {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -553,29 +374,14 @@ footer {
     display: none;
   }
 
-  .header-cta {
-    min-height: 34px;
-  }
-
   .hero {
     min-height: 0;
     padding: 76px 0 62px;
-    grid-template-columns: minmax(0, 1fr);
   }
 
   .hero h1 {
     font-size: clamp(36px, 9.5vw, 48px);
     line-height: 1.15;
-  }
-
-  .profile-card {
-    width: 100%;
-    padding: 25px;
-    border-radius: 24px;
-  }
-
-  .stats {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .work-intro {
@@ -601,12 +407,6 @@ footer {
   .demo-grid-two,
   .demo-grid-three {
     grid-template-columns: 1fr;
-  }
-
-  .contact {
-    margin-top: 82px;
-    padding: 44px 25px;
-    border-radius: 24px;
   }
 
   footer {

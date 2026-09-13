@@ -1,4 +1,4 @@
-# Zeyu Zhang — Embodied AI Portfolio
+# Embodied AI Portfolio
 
 一个无构建依赖的静态作品集，可直接部署到 GitHub Pages。
 
