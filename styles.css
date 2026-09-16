@@ -256,12 +256,14 @@ footer {
 }
 
 #simulation .video-frame,
-#perception .video-frame {
+#perception .video-frame,
+#control .video-frame {
   aspect-ratio: auto;
 }
 
 #simulation .video-frame video,
-#perception .video-frame video {
+#perception .video-frame video,
+#control .video-frame video {
   height: auto;
   object-fit: contain;
 }
