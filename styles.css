@@ -213,7 +213,8 @@ footer {
 
 .section-heading h2 {
   margin-top: 10px;
-  font-size: clamp(30px, 3.7vw, 46px);
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.18;
 }
 
 .section-heading div > p:last-child {
@@ -249,11 +250,12 @@ footer {
 }
 
 #simulation .video-frame {
-  aspect-ratio: 2.25 / 1;
+  aspect-ratio: auto;
 }
 
 #simulation .video-frame video {
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 .demo-card {
