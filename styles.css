@@ -170,7 +170,7 @@ footer {
 }
 
 .project-section {
-  padding: 105px 0 42px;
+  padding: 72px 0 24px;
 }
 
 #vla-agent {
@@ -352,7 +352,7 @@ footer {
 }
 
 footer {
-  margin-top: 110px;
+  margin-top: 72px;
   padding: 35px 0 45px;
   display: flex;
   justify-content: space-between;
@@ -391,7 +391,7 @@ footer {
   }
 
   .project-section {
-    padding-top: 78px;
+    padding-top: 56px;
   }
 
   #vla-agent {
