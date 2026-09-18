@@ -22,9 +22,8 @@ python3 -m http.server 8000
 
 ## 内容说明
 
-- `assets/videos/vla-agent`：来自 `demo_unitree`
 - `assets/videos/simulation`：来自 `demo_ue_isaac`
 - `assets/videos/perception`：来自 `demo_ral_icra`
 - `assets/videos/control`：来自 `demo_control`
 
-页面仅使用上述四个以 `demo` 开头的素材目录。所有视频默认静音、循环播放，并仅在进入可视区域时播放。
+页面仅展示上述三个素材目录；`assets/videos/vla-agent` 保留在仓库中，但不在页面展示。所有视频默认静音、循环播放，并仅在进入可视区域时播放。

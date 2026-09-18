@@ -173,7 +173,7 @@ footer {
   padding: 72px 0 24px;
 }
 
-#vla-agent {
+#simulation {
   padding-top: 24px;
 }
 
@@ -232,12 +232,6 @@ footer {
 
 #simulation .demo-grid-feature {
   max-width: 960px;
-}
-
-#vla-agent .demo-grid-two {
-  width: 100%;
-  max-width: 1060px;
-  margin-inline: auto;
 }
 
 #perception .demo-grid-two {
@@ -394,7 +388,7 @@ footer {
     padding-top: 56px;
   }
 
-  #vla-agent {
+  #simulation {
     padding-top: 20px;
   }
 
