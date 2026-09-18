@@ -234,7 +234,12 @@ footer {
   max-width: 960px;
 }
 
-#vla-agent .demo-grid-two,
+#vla-agent .demo-grid-two {
+  width: 100%;
+  max-width: 960px;
+  margin-inline: auto;
+}
+
 #perception .demo-grid-two {
   width: 100%;
   max-width: 900px;
@@ -408,7 +413,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  #vla-agent .demo-grid-two,
   #perception .demo-grid-two {
     max-width: 480px;
   }
