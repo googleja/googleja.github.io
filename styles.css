@@ -337,11 +337,7 @@ footer {
 }
 
 .demo-copy {
-  padding: 24px 25px 27px;
-}
-
-.demo-copy.compact {
-  padding: 20px 21px 23px;
+  padding: 18px 22px;
 }
 
 .demo-copy > div {
@@ -361,13 +357,6 @@ footer {
   margin: 0;
   font-size: 18px;
   letter-spacing: -0.02em;
-}
-
-.demo-copy p {
-  margin: 10px 0 0;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.65;
 }
 
 .demo-card-feature .video-frame {
